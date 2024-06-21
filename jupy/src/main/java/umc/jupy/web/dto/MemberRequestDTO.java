@@ -1,4 +1,4 @@
-package umc.jupy.dto;
+package umc.jupy.web.dto;
 
 import lombok.Getter;
 
@@ -12,6 +12,7 @@ public class MemberRequestDTO{
         String name;
         Integer gender;
         LocalDate birth;
+        Integer age;
         String address;
         String specAddress;
         List<Long> preferCategory;

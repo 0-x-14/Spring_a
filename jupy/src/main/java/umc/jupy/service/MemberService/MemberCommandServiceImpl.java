@@ -10,7 +10,7 @@ import umc.jupy.converter.MemberPreferConverter;
 import umc.jupy.domain.FoodCategory;
 import umc.jupy.domain.Member;
 import umc.jupy.domain.mapping.MemberPrefer;
-import umc.jupy.dto.MemberRequestDTO;
+import umc.jupy.web.dto.MemberRequestDTO;
 import umc.jupy.repository.FoodCategoryRepository;
 import umc.jupy.repository.MemberRepository;
 

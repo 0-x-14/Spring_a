@@ -1,4 +1,4 @@
-package umc.jupy.controller;
+package umc.jupy.web.controller;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 import umc.jupy.apiPayload.ApiResponse;
 import umc.jupy.converter.MemberConverter;
 import umc.jupy.domain.Member;
-import umc.jupy.dto.MemberRequestDTO;
-import umc.jupy.dto.MemberResponseDTO;
+import umc.jupy.web.dto.MemberRequestDTO;
+import umc.jupy.web.dto.MemberResponseDTO;
 import umc.jupy.service.MemberService.MemberCommandService;
 
 

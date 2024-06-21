@@ -1,4 +1,4 @@
-package umc.jupy.dto;
+package umc.jupy.web.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

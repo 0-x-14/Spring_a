@@ -2,8 +2,8 @@ package umc.jupy.converter;
 
 import umc.jupy.domain.Member;
 import umc.jupy.domain.enums.Gender;
-import umc.jupy.dto.MemberRequestDTO;
-import umc.jupy.dto.MemberResponseDTO;
+import umc.jupy.web.dto.MemberRequestDTO;
+import umc.jupy.web.dto.MemberResponseDTO;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -32,11 +32,15 @@ public class MemberConverter {
                 break;
         }
 
+        System.out.println("Member Birth: " + request.getBirth());
+
         return Member.builder()
                 .address(request.getAddress())
                 .specAddress(request.getSpecAddress())
                 .gender(gender)
+                .age(request.getAge())
                 .name(request.getName())
+                .birth(request.getBirth())
                 .memberPreferList(new ArrayList<>())
                 .build();
     }
