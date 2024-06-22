@@ -36,8 +36,9 @@ public class Member extends BaseEntity {
 
     private LocalDate inactiveDate;
 
-    @Column(nullable = false, length = 50)
+    // @Column(nullable = false, length = 50)
     private String email;
+    // 원래 로그인은 소셜로그인에서 처리하지만, 소셜 로그인 없이 하는 중이라 nullable로 진행
 
     private Integer point;
 
